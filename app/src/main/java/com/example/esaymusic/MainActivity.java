@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) {//下一首 并使进度条长度位播放歌曲长度
                 if(num==4)num=0;
                 else num++;
                 test(num);
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
         });
         previous.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) {//播放上一首 并使进度条位播放歌曲的长度
                 if(num==0)num=4;
                 else num--;
                 test(num);
